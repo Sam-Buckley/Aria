@@ -1,0 +1,4 @@
+(var empty "")
+(def new [str] str)
+
+(def len [str] (length str))
