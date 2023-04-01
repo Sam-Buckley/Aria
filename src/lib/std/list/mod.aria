@@ -1,0 +1,44 @@
+"functions to join lists together by a separator"
+(var new (
+    (remove [1] 0)))
+(def return [n] (do n))
+
+(def join [list sep] (
+    (var tr "")
+    (var i 0)
+    (while (<= i (- (length list) 1)) (
+        (if (== i (- (length list) 1)) 
+        (var tr (concat tr (index list i)))
+        (var tr (concat tr (concat (index list i) sep))))
+        (var i (+ i 1))))
+    tr))
+(def split [str sep] (
+    (var list new)
+    (var i 0)
+    (var current "")
+    (while (< i (length str)) (
+        (if (== (index str i) sep) (
+            (push list current)
+            (var current ""))
+            (if (== sep "") 
+            (push list (index str i))
+            (var current (concat current (index str i))))
+        )
+        (var i (+ i 1))))
+    (push list current)
+    list))
+
+(def index [list n] (
+    (index list n)
+))
+
+(def range [start end] (
+    (var list new)
+    (var i start)
+    (while (<= i end) (
+        (push list i)
+        (var i (+ i 1))))
+    list))
+
+(def empty [list] (
+    (if (== 0 (length list)) true false)))
