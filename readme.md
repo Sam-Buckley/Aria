@@ -76,7 +76,7 @@ Aria functions do not have varargs, but macros can, here's a macro to take multi
   (for i args (
     (var tr (+ tr (eval i)))))))
 ```
-this might be alot to take in, the macro is defined by (macro <name> [args] (body))
+This might be alot to take in, the macro is defined by (macro <name> [args] (body))
   `(eval (index args 0))` calls index 0 of the args, i.e the first arg. evaluates it to get the number from it, and then removes the arg via `(remove args 0)`
   then, it itates through the args with a for loop and redefined tr as tr + the evaluated value of i.
 The reason you must evaluate it is because the macro is reading the AST, and the eval function saves time calling the value from scope or extracting the value from its node. This will be explained more in the docs.
