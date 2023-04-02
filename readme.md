@@ -32,3 +32,18 @@ If you are interested in contributing to this project, you can follow these step
 ## License
 
 This project is licensed under the [GNU Public 3.0 License](LICENSE).
+
+
+
+
+# Functions
+
+Functions are an essential part of Lisp. They allow you to define and execute custom operations on data. Functions are defined using the `defun` special form.
+
+## Defining Functions
+
+The basic syntax for defining a function is as follows:
+```clojure
+(def name [args] (
+  body)
+```
