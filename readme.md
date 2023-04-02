@@ -35,14 +35,14 @@ This project is licensed under the [GNU Public 3.0 License](LICENSE).
 
 
 # Basics
-Aria is a simple language, it has concrete rules that never change.##
+Aria is a simple language, it has concrete rules that never change.
 
-## RPN
+### RPN
 Aria uses RPN (Reverse Polish Notation), meaning the operator goes before the numbers
 `(+ 1 2)` (3)
 `(+ 2 (* 16 4))` (66)
 
-## S-Expressions
+### S-Expressions
 Aria uses S-Expressions, meaning all functions & arguments are **within** the brackets.
 `(print "Hello world!")`
 
