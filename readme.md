@@ -1,6 +1,4 @@
-# My Project Name
-
-Welcome to my project! This is a short description of what the project does and why it exists.
+# Aria
 
 ## Installation
 
