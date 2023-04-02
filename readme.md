@@ -31,4 +31,4 @@ If you are interested in contributing to this project, you can follow these step
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU Public 3.0 License](LICENSE).
